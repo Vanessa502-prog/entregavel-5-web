@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entregável 5 - APIs e JavaScript</title>
+</head>
+<body>
+    <h1>Objetos, Dados e Assincronismo</h1>
+
+    <section>
+        <h2>Parte 1 - Validação de pedidos</h2>
+        <p>Os resultados dos pedidos serão exibidos no Console (F12).</p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Parte 2 - Buscador de CEP</h2>
+
+        <form id="formularioCep">
+            <label for="cep">Digite o CEP:</label>
+            <input
+                type="text"
+                id="cep"
+                placeholder="Ex.: 01001000"
+                maxlength="20"
+                required
+            >
+            <button type="submit" id="botaoCep">Buscar CEP</button>
+        </form>
+
+        <p id="statusCep" role="status" aria-live="polite"></p>
+        <dl id="resultadoCep"></dl>
+
+        <h3>Histórico de CEPs</h3>
+        <ul id="historicoCep"></ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Parte 3 - Mini Pokédex</h2>
+
+        <form id="formularioPokemon">
+            <label for="nomePokemon">Nome do Pokémon:</label>
+            <input
+                type="text"
+                id="nomePokemon"
+                placeholder="Ex.: pikachu"
+                required
+            >
+            <button type="submit" id="botaoPokemon">Buscar Pokémon</button>
+        </form>
+
+        <p id="statusPokemon" role="status" aria-live="polite"></p>
+        <div id="resultadoPokemon"></div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
